@@ -53,7 +53,7 @@ def delete(name):
 @app.route('/update/<int:id>', methods=['POST','GET'])
 def update(id):
     people= db.execute("select * from birthdays where id=id")
-    if request.method == 'PUT':
+    if request.method == 'POST':
         people.name = request.form.get("name")
         people.day = request.form.get("day")
         people.month = request.form.get("month")

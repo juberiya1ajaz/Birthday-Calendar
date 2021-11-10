@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body  %}
+{% for p in people%}
+<div class="up">
+
+      <div class="f_up1">
+          <br><br><br><br>
+          <h1 >update data</h1>
+          <div class="f_up2" >
+              <form action="/update/{{p.id}}" class="form"method="POST">
+              <label>Name</label>
+              <br>
+              <input type="text" placeholder="Name " autocomplete="off" name="name" value="{{p.name}}">
+              <br>
+              <label>Month</label>
+              <br>
+              <input type="number" placeholder="Month" autocomplete="off" name="month" value="{{p.month}}">
+              <br>
+              <label>Day</label>
+              <br>
+              <input type="number" placeholder="Day" autocomplete="off" name="day" value="{{p.day}}">
+              <br>
+              <button type="submit"  onclick="return confirm('Are You Sure Want To Update The Birthday?')">Update</button>
+        </form>
+        </div>
+    </div>
+</div>
+<style>
+h1{color:#737373}
+</style>
+{% endfor %}
+{% endblock %}

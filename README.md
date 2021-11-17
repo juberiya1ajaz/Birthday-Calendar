@@ -1,6 +1,9 @@
 # Birthday-Calendar
 
-DESCRIPTION:
+<h2>DESCRIPTION:</h2>
 AN online Birthday-Calendar where you can ADD(insert), UPDATE and DELETE your loved ones birthday.
 
-ENVIRONMENT: SQL, HTML, HTML5, CSS, PYTHON AND FLASK
+<h2>ENVIRONMENT:</h2>
+<li>SQL
+ <li>HTML, HTML5 and CSS
+  <li>PYTHON AND FLASK
